@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Products - CloudVape</title>
+  <link rel="stylesheet" href="style.css">
+  <style>
+    .products {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      gap: 30px;
+      margin-top: 30px;
+    }
+
+    .product-card {
+      background: #1c1c1c;
+      border-radius: 10px;
+      padding: 15px;
+      color: #eee;
+      text-align: center;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.5);
+    }
+
+    .product-card img {
+      width: 100%;
+      height: 180px;
+      object-fit: cover;
+      border-radius: 8px;
+      margin-bottom: 10px;
+    }
+
+    .product-card h3 {
+      margin: 10px 0 5px;
+      color: #00e1ff;
+    }
+
+    .product-card p {
+      font-size: 0.95rem;
+      margin-bottom: 10px;
+    }
+
+    .btn {
+      display: inline-block;
+      padding: 10px 15px;
+      background-color: #00e1ff;
+      color: black;
+      font-weight: bold;
+      border-radius: 5px;
+      text-decoration: none;
+      transition: background-color 0.3s ease;
+    }
+
+    .btn:hover {
+      background-color: #00bcd4;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>Our Products</h1>
+  </header>
+
+  <nav>
+    <a href="index.html">Home</a>
+    <a href="about.html">About</a>
+    <a href="products.html">Products</a>
+    <a href="contact.html">Contact</a>
+  </nav>
+
+  <div class="container">
+    <div class="products">
+      <div class="product-card">
+        <img src="images/vape1.jpg" alt="Vape 1">
+        <h3>Classic Vape Pen</h3>
+        <p>R399 - Smooth and stylish for everyday use.</p>
+        <a href="https://wa.me/27XXXXXXXXX" class="btn">Order Now</a>
+      </div>
+
+      <div class="product-card">
+        <img src="images/vape2.jpg" alt="Vape 2">
+        <h3>Flavor Boost Pod</h3>
+        <p>R249 - High-performance flavors in a compact pod.</p>
+        <a href="https://wa.me/27XXXXXXXXX" class="btn">Order Now</a>
+      </div>
+
+      <div class="product-card">
+        <img src="images/vape3.jpg" alt="Vape 3">
+        <h3>CloudStorm Kit</h3>
+        <p>R799 - Advanced kit for vape enthusiasts.</p>
+        <a href="https://wa.me/27XXXXXXXXX" class="btn">Order Now</a>
+      </div>
+
+      <div class="product-card">
+        <img src="images/vape4.jpg" alt="Vape 4">
+        <h3>Mint Ice Pods (4-Pack)</h3>
+        <p>R199 - Fresh flavor that lasts all day.</p>
+        <a href="https://wa.me/27XXXXXXXXX" class="btn">Order Now</a>
+      </div>
+    </div>
+  </div>
+
+  <footer>
+    <p>&copy; 2025 CloudVape. All rights reserved.</p>
+  </footer>
+
+</body>
+</html>

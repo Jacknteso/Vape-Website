@@ -1,0 +1,317 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>CloudVape - Premium Vape Products</title>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: 'Montserrat', sans-serif;
+      background-color: #111;
+      color: #eee;
+      line-height: 1.6;
+    }
+
+    header {
+      background-color: #000;
+      padding: 2.5rem 1rem 2rem;
+      text-align: center;
+      border-bottom: 3px solid #00e1ff;
+    }
+
+    header h1 {
+      font-size: 3rem;
+      color: #00e1ff;
+    }
+
+    header p {
+      font-size: 1.1rem;
+      color: #aaa;
+    }
+
+    nav {
+      background-color: #1a1a1a;
+      padding: 1rem 0;
+      text-align: center;
+      border-bottom: 1px solid #333;
+    }
+
+    nav a {
+      color: #ccc;
+      margin: 0 20px;
+      text-decoration: none;
+      font-weight: 500;
+      font-size: 1rem;
+      transition: color 0.3s;
+    }
+
+    nav a:hover {
+      color: #00e1ff;
+    }
+
+    .slideshow {
+      position: relative;
+      width: 100%;
+      height: 90vh;
+      overflow: hidden;
+    }
+
+    .slides {
+      display: none;
+      position: relative;
+      width: 100%;
+      height: 100%;
+    }
+
+    .slides img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+
+    .caption {
+      position: absolute;
+      bottom: 18%;
+      left: 8%;
+      font-size: 2.5rem;
+      color: #00e1ff;
+      max-width: 550px;
+      line-height: 1.4;
+      text-shadow: 0 4px 10px rgba(0,0,0,0.7);
+    }
+
+    .hero-btn {
+      display: inline-block;
+      margin-top: 20px;
+      padding: 14px 28px;
+      font-size: 1rem;
+      background-color: #00e1ff;
+      color: #000;
+      text-decoration: none;
+      font-weight: bold;
+      border-radius: 6px;
+      transition: all 0.3s ease;
+    }
+
+    .hero-btn:hover {
+      background-color: #00bcd4;
+      transform: scale(1.05);
+    }
+
+    .fade {
+      animation: fade 1.5s ease-in-out;
+    }
+
+    @keyframes fade {
+      from { opacity: 0.4; }
+      to { opacity: 1; }
+    }
+
+    .container {
+      max-width: 1200px;
+      margin: 60px auto;
+      padding: 0 20px;
+    }
+
+    .container h2 {
+      color: #00e1ff;
+      font-size: 1.8rem;
+      margin-bottom: 15px;
+    }
+
+    .container p {
+      color: #ccc;
+      font-size: 1rem;
+    }
+
+    .gallery {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      gap: 20px;
+      margin-top: 20px;
+    }
+
+    .gallery img {
+      width: 100%;
+      border-radius: 12px;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.5);
+      transition: transform 0.3s ease;
+    }
+
+    .gallery img:hover {
+      transform: scale(1.04);
+    }
+
+    .product-preview {
+      background: #1a1a1a;
+      padding: 60px 20px;
+      text-align: center;
+      margin-top: 80px;
+    }
+
+    .product-preview h2 {
+      color: #00e1ff;
+      font-size: 2rem;
+      margin-bottom: 40px;
+    }
+
+    .product-cards {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+      gap: 30px;
+    }
+
+    .product-card {
+      background: #222;
+      border-radius: 12px;
+      padding: 20px;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.4);
+    }
+
+    .product-card img {
+      width: 100%;
+      border-radius: 10px;
+      margin-bottom: 15px;
+    }
+
+    .product-card h3 {
+      color: #00e1ff;
+      font-size: 1.2rem;
+      margin-bottom: 10px;
+    }
+
+    .product-card p {
+      font-size: 0.95rem;
+      color: #ccc;
+    }
+
+    footer {
+      background-color: #000;
+      color: #888;
+      text-align: center;
+      padding: 1rem;
+      font-size: 0.9rem;
+      margin-top: 80px;
+      border-top: 2px solid #00e1ff;
+    }
+  </style>
+</head>
+
+<body>
+
+  <header>
+    <h1>CloudVape</h1>
+    <p>Unleash the Cloud. Own the Style.</p>
+  </header>
+
+  <nav>
+    <a href="index.html">Home</a>
+    <a href="about.html">About</a>
+    <a href="products.html">Products</a>
+    <a href="contact.html">Contact</a>
+  </nav>
+
+  <!-- Hero Slideshow -->
+  <section class="slideshow">
+    <div class="slides fade">
+      <img src="images/slide1.jpg" alt="Smooth Vape Experience">
+      <div class="caption">
+        Smooth. Stylish. CloudVape.
+        <br>
+        <a href="products.html" class="hero-btn">Shop Now</a>
+      </div>
+    </div>
+
+    <div class="slides fade">
+      <img src="images/slide2.jpg" alt="Premium Pods and Devices">
+      <div class="caption">
+        Premium Pods. Elite Devices.
+        <br>
+        <a href="products.html" class="hero-btn">Shop Now</a>
+      </div>
+    </div>
+
+    <div class="slides fade">
+      <img src="images/slide3.jpg" alt="Elevate Your Lifestyle">
+      <div class="caption">
+        Vape Elevated.
+        <br>
+        <a href="products.html" class="hero-btn">Shop Now</a>
+      </div>
+    </div>
+  </section>
+
+  <div class="container">
+    <section>
+      <h2>About CloudVape</h2>
+      <p>
+        CloudVape is your ultimate destination for sleek, high-quality vape gear and premium flavors.
+        Whether you're chasing clouds or savoring smooth hits, we’ve got you covered with stylish devices,
+        powerful kits, and fresh pod flavors — all designed for a modern, effortless vaping experience.
+      </p>
+    </section>
+
+    <section>
+      <h2>Featured Gallery</h2>
+      <div class="gallery">
+        <img src="images/vape1.jpg" alt="Vape Product 1">
+        <img src="images/vape2.jpg" alt="Vape Product 2">
+        <img src="images/vape3.jpg" alt="Vape Product 3">
+        <img src="images/vape4.jpg" alt="Vape Product 4">
+      </div>
+    </section>
+  </div>
+
+  <!-- Product Preview Section -->
+  <section class="product-preview">
+    <h2>Explore Our Vape Essentials</h2>
+    <div class="product-cards">
+      <div class="product-card">
+        <img src="images/vape1.jpg" alt="Product A">
+        <h3>CloudBar Pro Kit</h3>
+        <p>Experience smooth, flavorful hits with our latest pod system.</p>
+      </div>
+      <div class="product-card">
+        <img src="images/vape2.jpg" alt="Product B">
+        <h3>ZenTank Series</h3>
+        <p>Top-fill tanks built for flavor and long-lasting performance.</p>
+      </div>
+      <div class="product-card">
+        <img src="images/vape3.jpg" alt="Product C">
+        <h3>Edge 510 Battery</h3>
+        <p>Power your clouds with style and cutting-edge battery life.</p>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 CloudVape. All rights reserved.</p>
+  </footer>
+
+  <!-- Slideshow Script -->
+  <script>
+    let slideIndex = 0;
+    showSlides();
+
+    function showSlides() {
+      let i;
+      let slides = document.getElementsByClassName("slides");
+      for (i = 0; i < slides.length; i++) {
+        slides[i].style.display = "none";
+      }
+      slideIndex++;
+      if (slideIndex > slides.length) { slideIndex = 1 }
+      slides[slideIndex - 1].style.display = "block";
+      setTimeout(showSlides, 4000); // Change image every 4 seconds
+    }
+  </script>
+
+</body>
+</html>
